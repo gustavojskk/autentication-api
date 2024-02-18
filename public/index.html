@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Authentication App</title>
+</head>
+<body>
+    <div class="container" id="registerFormContainer">
+        <div id="registerForm" class="form-container">
+            <h2>Registro de Usuário</h2>
+            <label for="registerUsername">Nome de Usuário:</label>
+            <input type="text" id="registerUsername" required>
+            <br>
+            <label for="registerEmail">E-mail:</label>
+            <input type="email" id="registerEmail" required>
+            <br>
+            <label for="registerPassword">Senha:</label>
+            <input type="password" id="registerPassword" required>
+            <br>
+            <button type="button" onclick="registerUser()">Registrar</button>
+        </div>
+    </div>
+
+    <div class="container" id="loginFormContainer">
+        <div id="loginForm" class="form-container">
+            <h2>Login</h2>
+            <label for="loginEmail">E-mail:</label>
+            <input type="email" id="loginEmail" required>
+            <br>
+            <label for="loginPassword">Senha:</label>
+            <input type="password" id="loginPassword" required>
+            <br>
+            <button type="button" onclick="loginUser()">Login</button>
+        </div>
+    </div>
+
+    <div class="container" id="recoverPasswordFormContainer">
+        <div id="recoverPasswordForm" class="form-container">
+            <h2>Recuperação de Senha</h2>
+            <label for="recoverPasswordEmail">E-mail:</label>
+            <input type="email" id="recoverPasswordEmail" required>
+            <br>
+            <button type="button" onclick="recoverPassword()">Recuperar Senha</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
