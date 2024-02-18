@@ -7,10 +7,6 @@ const registerRoute = require('./routes/register');
 const loginRoute = require('./routes/login');
 const recoverPasswordRoute = require('./routes/recover-password');
 
-app.use('/register', express.static(path.join(__dirname, 'public')));
-app.use('/login', express.static(path.join(__dirname, 'public')));
-app.use('/recover-password', express.static(path.join(__dirname, 'public')));
-
 // Rotas da API
 app.use('/api/register', registerRoute);
 app.use('/api/login', loginRoute);
