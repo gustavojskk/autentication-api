@@ -6,10 +6,10 @@ const mysql = require('mysql2');
 
 const db = mysql.createPool({
     connectionLimit: 10,
-    host: '146.235.33.73',
-    user: 'gustavo',
-    password: '#mp10fiGg#',
-    database: 'authentication'
+    host: '',
+    user: '',
+    password: '',
+    database: ''
 });
 
 router.use(bodyParser.urlencoded({ extended: true }));
